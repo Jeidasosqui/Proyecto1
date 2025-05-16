@@ -1,0 +1,12 @@
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita que se recargue la página al enviar el formulario
+
+        // Aquí puedes agregar la lógica para enviar el formulario (por ejemplo, usando fetch o XMLHttpRequest)
+        // Por ahora, solo mostraremos un mensaje de éxito
+        alert('¡Mensaje enviado!  Te contactaremos a la brevedad.');
+        contactForm.reset(); // Limpia el formulario después de mostrar el mensaje
+    });
+}
