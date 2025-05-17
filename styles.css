@@ -5,7 +5,8 @@
   --color-secundario: #F9F9F9; /* Un amarillo/naranja */
   --color-texto-principal: #333; /* Gris oscuro para el texto principal */
   --color-fondo-claro: #4CAF50; /* Un gris muy claro para fondos */
-  --color-acento: #d9534f; /* Un rojo para acentos o errores */
+  --color-acento: #d9534f; 
+  --color-sobreponer: #FF7F50; /* Un rojo para acentos o errores */
 }
 
 .cabecera-principal {
@@ -16,7 +17,42 @@
 
 /* Estilo del título principal */
 .titulo-principal {
-    color: #333;
+    color: var(--color-secundario);
     font-size: 2.5em;
     margin-bottom: 10px;
 }
+
+.subtitulo-principal {
+    color: var(--color-secundario);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.navegacion-principal {
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-weight: bold;
+}
+
+.lista-opciones {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center;
+}
+
+.lista-opciones li {
+    margin: 0 15px;
+}
+
+.lista-opciones li a {
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-weight: bold;
+}
+
+.lista-opciones li a:hover {
+    color: var(--color-sobreponer);
+}
+
