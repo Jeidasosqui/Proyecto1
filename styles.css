@@ -1,12 +1,22 @@
-const contactForm = document.getElementById('contact-form');
+/*Estilogs generales del encabezado*/
 
-if (contactForm) {
-    contactForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Evita que se recargue la página al enviar el formulario
+:root {
+  --color-primario: #2E7D32; /* Un verde bonito */
+  --color-secundario: #F9F9F9; /* Un amarillo/naranja */
+  --color-texto-principal: #333; /* Gris oscuro para el texto principal */
+  --color-fondo-claro: #4CAF50; /* Un gris muy claro para fondos */
+  --color-acento: #d9534f; /* Un rojo para acentos o errores */
+}
 
-        // Aquí puedes agregar la lógica para enviar el formulario (por ejemplo, usando fetch o XMLHttpRequest)
-        // Por ahora, solo mostraremos un mensaje de éxito
-        alert('¡Mensaje enviado!  Te contactaremos a la brevedad.');
-        contactForm.reset(); // Limpia el formulario después de mostrar el mensaje
-    });
+.cabecera-principal {
+    background-color: var(--color-fondo-claro);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo del título principal */
+.titulo-principal {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
